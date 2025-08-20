@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaia - The learning hub for kids</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+        <!-- Instruction for Search Engines (Robots) -->
+    <meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+
+    <main class="hero-section">
+        <h1 class="brand-name">Kaia</h1>
+        <h2 class="headline">The learning hub parents trust and kids truly love</h2>
+        <p class="description">
+            Kaia is the first all-in-one smart device designed for children aged 5 to 10.<br>
+            Safe, structured, and powered by AI, it transforms screen time into real growth.
+        </p>
+        <button class="cta-button" id="openModalBtn">Join our parent community</button>
+        <p class="sub-cta">Be the first to explore Kaia and get early updates when signing up!</p>
+    </main>
+
+    <footer>
+        <p>Coming Soon • Transforming Screen Time Into Growth</p>
+    </footer>
+
+    <!-- The Modal -->
+    <div id="joinModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModalBtn">&times;</span>
+            <h3>Join our parent community</h3>
+            <form action="https://formsubmit.co/aurelielavigna@gmail.com" method="POST">
+                <!-- Formsubmit.co Settings -->
+                <input type="hidden" name="_subject" value="New Kaia Community Signup!">
+                <input type="hidden" name="_captcha" value="false">
+
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="Full Name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="Email Address" placeholder="Enter your email address" required>
+
+                <label for="postcode">Postcode</label>
+                <input type="text" id="postcode" name="Postcode" placeholder="Enter your postcode" required>
+
+                <label for="childAge">Children's Age</label>
+                <select id="childAge" name="Children's Age" required>
+                    <option value="" disabled selected>Select age range</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="5-7">5-7</option>
+                    <option value="8-10">8-10</option>
+                    <option value="Multiple Ages">Multiple Ages</option>
+                </select>
+
+                <button type="submit" class="cta-button form-submit-btn">Join Early Access</button>
+            </form>
+            <p class="form-subtext">Be the first to explore Kaia, get early updates, and unlock founding parent perks.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
